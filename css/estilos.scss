@@ -1,0 +1,14 @@
+@import "../vendor/twbs/bootstrap/scss/functions";
+@import "../vendor/twbs/bootstrap/scss/variables";
+// Creamos nuestro Mapa de Colores
+$mis-colores: (
+  "fondo-naranja": #ff8a65,
+  "verde-pistacho": #28a745,
+  "azul-brillante": #007bff,
+  "azul-cielo": #17a2b8,
+  "gris-oscuro": #6c757d,
+);
+
+// Realizamos un Merge entre el Mapa de Colores por Defecto y el nuestro
+$theme-colors: map-merge($theme-colors, $mis-colores);
+@import "../vendor/twbs/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,33 @@
+{
+  "name": "cifpacarballeira/donatorm",
+  "description": "Tarea 5 de Desarrollo Web en Entorno Servidor (DWCS)",
+  "type": "project",
+  "require": {
+    "philo/laravel-blade": "^3.1",
+    "fakerphp/faker": "^1.5",
+    "milon/barcode": "^5.1"
+  },
+  "require-dev": {
+    "twbs/bootstrap": "^5.2",
+    "fortawesome/font-awesome": "^6.4",
+    "scssphp/scssphp": "^1.11"
+  },
+  "license": "GNU/GPL",
+  "autoload": {
+    "psr-4": {
+      "CifpACarballeira\\DonatoRM\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "DonatoRM",
+      "email": "donatoramos@hotmail.com"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "kylekatarnls/update-helper": true
+    },
+    "optimize-autoloader": true
+  }
+}
