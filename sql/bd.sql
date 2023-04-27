@@ -1,9 +1,11 @@
 -- Creamos la base de datos
 create database practicaUnidad5;
+-- Creamos el usuario
+create user 'gestor'@'localhost' identified by 'secreto';
 -- La seleccionamos
 use practicaUnidad5;
 -- Reutilizamos el usuario gestor que ya teníamos (Podemos crear otro)
-grant all on practicaUnidad5.* to gestor@'localhost';
+grant all on practicaUnidad5.* to 'gestor'@'localhost';
  -- Creamos las Tablas --
  create table jugadores(
     id int auto_increment primary key,
